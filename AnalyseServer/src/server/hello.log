@@ -1,0 +1,117 @@
+ERROR:root:Uncaught exception POST /AnalyseServer (127.0.0.1)
+HTTPRequest(protocol='http', host='10.0.2.2:8080', method='POST', uri='/AnalyseServer', version='HTTP/1.1', remote_ip='127.0.0.1', body='json={appInfos:[{"appname":"AnalyseApp","pname":"com.asdzheng.analyseapp.activity","versionName":"1.0","versionCode":1},{"appname":"little prince\\u0027s beauty","pname":"com.asd.littleprincesbeauty","versionName":"1.0","versionCode":1},{"appname":"little prince\\u0027s beauty","pname":"com.example.littleprincesbeauty","versionName":"1.0","versionCode":1},{"appname":"Example Wallpapers","pname":"com.example.android.livecubes","versionName":"2.2","versionCode":8},{"appname":"API Demos","pname":"com.example.android.apis","versionName":"2.2","versionCode":8},{"appname":"com.android.gesture.builder","pname":"com.android.gesture.builder","versionName":"2.2","versionCode":8},{"appname":"MyDouban","pname":"com.example.mydouban","versionName":"1.0","versionCode":1},{"appname":"Sample Soft Keyboard","pname":"com.example.android.softkeyboard","versionName":"2.2","versionCode":8},{"appname":"Contrat_Test","pname":"com.example.contrat_test","versionName":"1.0","versionCode":1},{"appname":"CountSheep","pname":"com.zheng.countsheep","versionName":"1.0","versionCode":1}]}', headers={'Content-Length': '1071', 'Host': '10.0.2.2:8080', 'Content-Type': 'application/x-www-form-urlencoded', 'Connection': 'Keep-Alive', 'User-Agent': 'Dalvik/1.2.0 (Linux; U; Android 2.2; sdk Build/FRF91)'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 861, in _execute
+    getattr(self, self.request.method.lower())(*args, **kwargs)
+  File "/home/richard/workspace/AnalyseServer/src/server/HelloWorld.py", line 15, in post
+    appCollection.insert(json)
+  File "/usr/local/lib/python2.7/dist-packages/pymongo-2.6.3-py2.7-linux-x86_64.egg/pymongo/collection.py", line 356, in insert
+    docs = [self.__database._fix_incoming(doc, self) for doc in docs]
+  File "/usr/local/lib/python2.7/dist-packages/pymongo-2.6.3-py2.7-linux-x86_64.egg/pymongo/database.py", line 254, in _fix_incoming
+    son = manipulator.transform_incoming(son, collection)
+  File "/usr/local/lib/python2.7/dist-packages/pymongo-2.6.3-py2.7-linux-x86_64.egg/pymongo/son_manipulator.py", line 73, in transform_incoming
+    son["_id"] = ObjectId()
+TypeError: 'unicode' object does not support item assignment
+ERROR:root:500 POST /AnalyseServer (127.0.0.1) 4.25ms
+ERROR:root:Uncaught exception POST /AnalyseServer (127.0.0.1)
+HTTPRequest(protocol='http', host='10.0.2.2:8080', method='POST', uri='/AnalyseServer', version='HTTP/1.1', remote_ip='127.0.0.1', body='json={appInfos:[{"appname":"AnalyseApp","pname":"com.asdzheng.analyseapp.activity","versionName":"1.0","versionCode":1},{"appname":"little prince\\u0027s beauty","pname":"com.example.littleprincesbeauty","versionName":"1.0","versionCode":1},{"appname":"Example Wallpapers","pname":"com.example.android.livecubes","versionName":"2.2","versionCode":8},{"appname":"API Demos","pname":"com.example.android.apis","versionName":"2.2","versionCode":8},{"appname":"com.android.gesture.builder","pname":"com.android.gesture.builder","versionName":"2.2","versionCode":8},{"appname":"MyDouban","pname":"com.example.mydouban","versionName":"1.0","versionCode":1},{"appname":"Sample Soft Keyboard","pname":"com.example.android.softkeyboard","versionName":"2.2","versionCode":8},{"appname":"Contrat_Test","pname":"com.example.contrat_test","versionName":"1.0","versionCode":1},{"appname":"CountSheep","pname":"com.zheng.countsheep","versionName":"1.0","versionCode":1}]}', headers={'Content-Length': '955', 'Host': '10.0.2.2:8080', 'Content-Type': 'application/x-www-form-urlencoded', 'Connection': 'Keep-Alive', 'User-Agent': 'Dalvik/1.2.0 (Linux; U; Android 2.2; sdk Build/FRF91)'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 861, in _execute
+    getattr(self, self.request.method.lower())(*args, **kwargs)
+  File "/home/richard/workspace/AnalyseServer/src/server/HelloWorld.py", line 15, in post
+    appCollection.insert(json)
+  File "/usr/local/lib/python2.7/dist-packages/pymongo-2.6.3-py2.7-linux-x86_64.egg/pymongo/collection.py", line 356, in insert
+    docs = [self.__database._fix_incoming(doc, self) for doc in docs]
+  File "/usr/local/lib/python2.7/dist-packages/pymongo-2.6.3-py2.7-linux-x86_64.egg/pymongo/database.py", line 254, in _fix_incoming
+    son = manipulator.transform_incoming(son, collection)
+  File "/usr/local/lib/python2.7/dist-packages/pymongo-2.6.3-py2.7-linux-x86_64.egg/pymongo/son_manipulator.py", line 73, in transform_incoming
+    son["_id"] = ObjectId()
+TypeError: 'unicode' object does not support item assignment
+ERROR:root:500 POST /AnalyseServer (127.0.0.1) 1.73ms
+ERROR:root:Uncaught exception POST /AnalyseServer (127.0.0.1)
+HTTPRequest(protocol='http', host='10.0.2.2:8080', method='POST', uri='/AnalyseServer', version='HTTP/1.1', remote_ip='127.0.0.1', body='json={appInfos:[{"appname":"AnalyseApp","pname":"com.asdzheng.analyseapp.activity","versionName":"1.0","versionCode":1},{"appname":"little prince\\u0027s beauty","pname":"com.example.littleprincesbeauty","versionName":"1.0","versionCode":1},{"appname":"Example Wallpapers","pname":"com.example.android.livecubes","versionName":"2.2","versionCode":8},{"appname":"API Demos","pname":"com.example.android.apis","versionName":"2.2","versionCode":8},{"appname":"com.android.gesture.builder","pname":"com.android.gesture.builder","versionName":"2.2","versionCode":8},{"appname":"MyDouban","pname":"com.example.mydouban","versionName":"1.0","versionCode":1},{"appname":"Sample Soft Keyboard","pname":"com.example.android.softkeyboard","versionName":"2.2","versionCode":8},{"appname":"Contrat_Test","pname":"com.example.contrat_test","versionName":"1.0","versionCode":1},{"appname":"CountSheep","pname":"com.zheng.countsheep","versionName":"1.0","versionCode":1}]}', headers={'Content-Length': '955', 'Host': '10.0.2.2:8080', 'Content-Type': 'application/x-www-form-urlencoded', 'Connection': 'Keep-Alive', 'User-Agent': 'Dalvik/1.2.0 (Linux; U; Android 2.2; sdk Build/FRF91)'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 861, in _execute
+    getattr(self, self.request.method.lower())(*args, **kwargs)
+  File "/home/richard/workspace/AnalyseServer/src/server/HelloWorld.py", line 15, in post
+    appCollection.insert(json)
+  File "/usr/local/lib/python2.7/dist-packages/pymongo-2.6.3-py2.7-linux-x86_64.egg/pymongo/collection.py", line 356, in insert
+    docs = [self.__database._fix_incoming(doc, self) for doc in docs]
+  File "/usr/local/lib/python2.7/dist-packages/pymongo-2.6.3-py2.7-linux-x86_64.egg/pymongo/database.py", line 254, in _fix_incoming
+    son = manipulator.transform_incoming(son, collection)
+  File "/usr/local/lib/python2.7/dist-packages/pymongo-2.6.3-py2.7-linux-x86_64.egg/pymongo/son_manipulator.py", line 73, in transform_incoming
+    son["_id"] = ObjectId()
+TypeError: 'unicode' object does not support item assignment
+ERROR:root:500 POST /AnalyseServer (127.0.0.1) 1.92ms
+ERROR:root:Uncaught exception POST /AnalyseServer (127.0.0.1)
+HTTPRequest(protocol='http', host='10.0.2.2:8080', method='POST', uri='/AnalyseServer', version='HTTP/1.1', remote_ip='127.0.0.1', body='json={appInfos:[{"appname":"AnalyseApp","pname":"com.asdzheng.analyseapp.activity","versionName":"1.0","versionCode":1},{"appname":"Example Wallpapers","pname":"com.example.android.livecubes","versionName":"2.2","versionCode":8},{"appname":"API Demos","pname":"com.example.android.apis","versionName":"2.2","versionCode":8},{"appname":"com.android.gesture.builder","pname":"com.android.gesture.builder","versionName":"2.2","versionCode":8},{"appname":"MyDouban","pname":"com.example.mydouban","versionName":"1.0","versionCode":1},{"appname":"Sample Soft Keyboard","pname":"com.example.android.softkeyboard","versionName":"2.2","versionCode":8},{"appname":"Contrat_Test","pname":"com.example.contrat_test","versionName":"1.0","versionCode":1},{"appname":"CountSheep","pname":"com.zheng.countsheep","versionName":"1.0","versionCode":1}]}', headers={'Content-Length': '835', 'Host': '10.0.2.2:8080', 'Content-Type': 'application/x-www-form-urlencoded', 'Connection': 'Keep-Alive', 'User-Agent': 'Dalvik/1.2.0 (Linux; U; Android 2.2; sdk Build/FRF91)'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 861, in _execute
+    getattr(self, self.request.method.lower())(*args, **kwargs)
+  File "/home/richard/workspace/AnalyseServer/src/server/HelloWorld.py", line 15, in post
+    appCollection.insert(json)
+  File "/usr/local/lib/python2.7/dist-packages/pymongo-2.6.3-py2.7-linux-x86_64.egg/pymongo/collection.py", line 356, in insert
+    docs = [self.__database._fix_incoming(doc, self) for doc in docs]
+  File "/usr/local/lib/python2.7/dist-packages/pymongo-2.6.3-py2.7-linux-x86_64.egg/pymongo/database.py", line 254, in _fix_incoming
+    son = manipulator.transform_incoming(son, collection)
+  File "/usr/local/lib/python2.7/dist-packages/pymongo-2.6.3-py2.7-linux-x86_64.egg/pymongo/son_manipulator.py", line 73, in transform_incoming
+    son["_id"] = ObjectId()
+TypeError: 'unicode' object does not support item assignment
+ERROR:root:500 POST /AnalyseServer (127.0.0.1) 1.36ms
+ERROR:root:Uncaught exception POST /AnalyseServer (127.0.0.1)
+HTTPRequest(protocol='http', host='10.0.2.2:8080', method='POST', uri='/AnalyseServer', version='HTTP/1.1', remote_ip='127.0.0.1', body='json={appInfos:[{"appname":"AnalyseApp","pname":"com.asdzheng.analyseapp.activity","versionName":"1.0","versionCode":1},{"appname":"Example Wallpapers","pname":"com.example.android.livecubes","versionName":"2.2","versionCode":8},{"appname":"API Demos","pname":"com.example.android.apis","versionName":"2.2","versionCode":8},{"appname":"com.android.gesture.builder","pname":"com.android.gesture.builder","versionName":"2.2","versionCode":8},{"appname":"MyDouban","pname":"com.example.mydouban","versionName":"1.0","versionCode":1},{"appname":"Sample Soft Keyboard","pname":"com.example.android.softkeyboard","versionName":"2.2","versionCode":8},{"appname":"Contrat_Test","pname":"com.example.contrat_test","versionName":"1.0","versionCode":1},{"appname":"CountSheep","pname":"com.zheng.countsheep","versionName":"1.0","versionCode":1}]}', headers={'Content-Length': '835', 'Host': '10.0.2.2:8080', 'Content-Type': 'application/x-www-form-urlencoded', 'Connection': 'Keep-Alive', 'User-Agent': 'Dalvik/1.2.0 (Linux; U; Android 2.2; sdk Build/FRF91)'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 861, in _execute
+    getattr(self, self.request.method.lower())(*args, **kwargs)
+  File "/home/richard/workspace/AnalyseServer/src/server/HelloWorld.py", line 15, in post
+    appCollection.insert(json)
+  File "/usr/local/lib/python2.7/dist-packages/pymongo-2.6.3-py2.7-linux-x86_64.egg/pymongo/collection.py", line 356, in insert
+    docs = [self.__database._fix_incoming(doc, self) for doc in docs]
+  File "/usr/local/lib/python2.7/dist-packages/pymongo-2.6.3-py2.7-linux-x86_64.egg/pymongo/database.py", line 254, in _fix_incoming
+    son = manipulator.transform_incoming(son, collection)
+  File "/usr/local/lib/python2.7/dist-packages/pymongo-2.6.3-py2.7-linux-x86_64.egg/pymongo/son_manipulator.py", line 73, in transform_incoming
+    son["_id"] = ObjectId()
+TypeError: 'unicode' object does not support item assignment
+ERROR:root:500 POST /AnalyseServer (127.0.0.1) 3.45ms
+ERROR:root:Uncaught exception POST /AnalyseServer (127.0.0.1)
+HTTPRequest(protocol='http', host='10.0.2.2:8080', method='POST', uri='/AnalyseServer', version='HTTP/1.1', remote_ip='127.0.0.1', body='json=[{"appname":"AnalyseApp","pname":"com.asdzheng.analyseapp.activity","versionName":"1.0","versionCode":1},{"appname":"Example Wallpapers","pname":"com.example.android.livecubes","versionName":"2.2","versionCode":8},{"appname":"API Demos","pname":"com.example.android.apis","versionName":"2.2","versionCode":8},{"appname":"com.android.gesture.builder","pname":"com.android.gesture.builder","versionName":"2.2","versionCode":8},{"appname":"MyDouban","pname":"com.example.mydouban","versionName":"1.0","versionCode":1},{"appname":"Sample Soft Keyboard","pname":"com.example.android.softkeyboard","versionName":"2.2","versionCode":8},{"appname":"Contrat_Test","pname":"com.example.contrat_test","versionName":"1.0","versionCode":1},{"appname":"CountSheep","pname":"com.zheng.countsheep","versionName":"1.0","versionCode":1}]', headers={'Content-Length': '824', 'Host': '10.0.2.2:8080', 'Content-Type': 'application/x-www-form-urlencoded', 'Connection': 'Keep-Alive', 'User-Agent': 'Dalvik/1.2.0 (Linux; U; Android 2.2; sdk Build/FRF91)'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 861, in _execute
+    getattr(self, self.request.method.lower())(*args, **kwargs)
+  File "/home/richard/workspace/AnalyseServer/src/server/HelloWorld.py", line 15, in post
+    json = json[1, len(json)]
+  File "/usr/local/lib/python2.7/dist-packages/pymongo-2.6.3-py2.7-linux-x86_64.egg/pymongo/collection.py", line 356, in insert
+    docs = [self.__database._fix_incoming(doc, self) for doc in docs]
+  File "/usr/local/lib/python2.7/dist-packages/pymongo-2.6.3-py2.7-linux-x86_64.egg/pymongo/database.py", line 254, in _fix_incoming
+    son = manipulator.transform_incoming(son, collection)
+  File "/usr/local/lib/python2.7/dist-packages/pymongo-2.6.3-py2.7-linux-x86_64.egg/pymongo/son_manipulator.py", line 73, in transform_incoming
+    son["_id"] = ObjectId()
+TypeError: 'unicode' object does not support item assignment
+ERROR:root:500 POST /AnalyseServer (127.0.0.1) 1.27ms
+ERROR:root:Uncaught exception POST /AnalyseServer (127.0.0.1)
+HTTPRequest(protocol='http', host='10.0.2.2:8080', method='POST', uri='/AnalyseServer', version='HTTP/1.1', remote_ip='127.0.0.1', body='json={appInfos:[{"appname":"AnalyseApp","pname":"com.asdzheng.analyseapp.activity","versionName":"1.0","versionCode":1},{"appname":"Example Wallpapers","pname":"com.example.android.livecubes","versionName":"2.2","versionCode":8},{"appname":"API Demos","pname":"com.example.android.apis","versionName":"2.2","versionCode":8},{"appname":"com.android.gesture.builder","pname":"com.android.gesture.builder","versionName":"2.2","versionCode":8},{"appname":"MyDouban","pname":"com.example.mydouban","versionName":"1.0","versionCode":1},{"appname":"Sample Soft Keyboard","pname":"com.example.android.softkeyboard","versionName":"2.2","versionCode":8},{"appname":"Contrat_Test","pname":"com.example.contrat_test","versionName":"1.0","versionCode":1},{"appname":"CountSheep","pname":"com.zheng.countsheep","versionName":"1.0","versionCode":1}]}', headers={'Content-Length': '835', 'Host': '10.0.2.2:8080', 'Content-Type': 'application/x-www-form-urlencoded', 'Connection': 'Keep-Alive', 'User-Agent': 'Dalvik/1.2.0 (Linux; U; Android 2.2; sdk Build/FRF91)'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 861, in _execute
+    getattr(self, self.request.method.lower())(*args, **kwargs)
+  File "/home/richard/workspace/AnalyseServer/src/server/HelloWorld.py", line 15, in post
+    json = json[1, len(json)]
+TypeError: string indices must be integers
+ERROR:root:500 POST /AnalyseServer (127.0.0.1) 2.03ms
+ERROR:root:Uncaught exception POST /AnalyseServer (127.0.0.1)
+HTTPRequest(protocol='http', host='10.0.2.2:8080', method='POST', uri='/AnalyseServer', version='HTTP/1.1', remote_ip='127.0.0.1', body='json={appInfos:[{"appname":"AnalyseApp","pname":"com.asdzheng.analyseapp.activity","versionName":"1.0","versionCode":1},{"appname":"Example Wallpapers","pname":"com.example.android.livecubes","versionName":"2.2","versionCode":8},{"appname":"API Demos","pname":"com.example.android.apis","versionName":"2.2","versionCode":8},{"appname":"com.android.gesture.builder","pname":"com.android.gesture.builder","versionName":"2.2","versionCode":8},{"appname":"MyDouban","pname":"com.example.mydouban","versionName":"1.0","versionCode":1},{"appname":"Sample Soft Keyboard","pname":"com.example.android.softkeyboard","versionName":"2.2","versionCode":8},{"appname":"Contrat_Test","pname":"com.example.contrat_test","versionName":"1.0","versionCode":1},{"appname":"CountSheep","pname":"com.zheng.countsheep","versionName":"1.0","versionCode":1}]}', headers={'Content-Length': '835', 'Host': '10.0.2.2:8080', 'Content-Type': 'application/x-www-form-urlencoded', 'Connection': 'Keep-Alive', 'User-Agent': 'Dalvik/1.2.0 (Linux; U; Android 2.2; sdk Build/FRF91)'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 861, in _execute
+    getattr(self, self.request.method.lower())(*args, **kwargs)
+  File "/home/richard/workspace/AnalyseServer/src/server/HelloWorld.py", line 15, in post
+    json = json[1, len(json)-1]
+TypeError: string indices must be integers
+ERROR:root:500 POST /AnalyseServer (127.0.0.1) 1.99ms
+ERROR:root:Uncaught exception POST /AnalyseServer (127.0.0.1)
+HTTPRequest(protocol='http', host='10.0.2.2:8080', method='POST', uri='/AnalyseServer', version='HTTP/1.1', remote_ip='127.0.0.1', body='json=[{"appname":"AnalyseApp","pname":"com.asdzheng.analyseapp.activity","versionName":"1.0","versionCode":1},{"appname":"Example Wallpapers","pname":"com.example.android.livecubes","versionName":"2.2","versionCode":8},{"appname":"API Demos","pname":"com.example.android.apis","versionName":"2.2","versionCode":8},{"appname":"com.android.gesture.builder","pname":"com.android.gesture.builder","versionName":"2.2","versionCode":8},{"appname":"MyDouban","pname":"com.example.mydouban","versionName":"1.0","versionCode":1},{"appname":"Sample Soft Keyboard","pname":"com.example.android.softkeyboard","versionName":"2.2","versionCode":8},{"appname":"Contrat_Test","pname":"com.example.contrat_test","versionName":"1.0","versionCode":1},{"appname":"CountSheep","pname":"com.zheng.countsheep","versionName":"1.0","versionCode":1}]', headers={'Content-Length': '824', 'Host': '10.0.2.2:8080', 'Content-Type': 'application/x-www-form-urlencoded', 'Connection': 'Keep-Alive', 'User-Agent': 'Dalvik/1.2.0 (Linux; U; Android 2.2; sdk Build/FRF91)'})
+Traceback (most recent call last):
+  File "/usr/local/lib/python2.7/dist-packages/tornado/web.py", line 861, in _execute
+    getattr(self, self.request.method.lower())(*args, **kwargs)
+  File "/home/richard/workspace/AnalyseServer/src/server/HelloWorld.py", line 15, in post
+    json = json[1, len(json)-1]
+TypeError: string indices must be integers
+ERROR:root:500 POST /AnalyseServer (127.0.0.1) 1.40ms
